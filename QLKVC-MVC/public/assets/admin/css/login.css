@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #0984e3 !important;
+
+  /* overflow: hidden; */
+}
+
+.box {
+  position: relative;
+  width: 380px;
+  height: 450px;
+  background: #1c1c1c;
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.box::before {
+  content: "";
+  width: 380px;
+  height: 420px;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  background: linear-gradient(0, transparent, #45f3ff, #45f3ff);
+  transform-origin: bottom right;
+  animation: animate 3s linear infinite;
+}
+
+.box::after {
+  content: "";
+  width: 380px;
+  height: 420px;
+  position: absolute;
+  bottom: -50%;
+  right: -50%;
+  background: linear-gradient(0deg, #45f3ff, #45f3ff, transparent);
+  transform-origin: top left;
+  animation: animate 3s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+    background: linear-gradient(0deg, #45f3ff, #45f3ff, transparent);
+  }
+  20% {
+    background: linear-gradient(0deg, green, green, transparent);
+  }
+  40% {
+    background: linear-gradient(0deg, orange, orange, transparent);
+  }
+  60% {
+    background: linear-gradient(0deg, pink, pink, transparent);
+  }
+  100% {
+    transform: rotate(360deg);
+    background-color: red;
+  }
+}
+
+.form {
+  position: absolute;
+  background-color: #1c1c1c;
+  inset: 3px;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.form h3 {
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  text-shadow: -2px 2px 8px #fff;
+}
+
+form {
+  width: 80%;
+  margin: 0 auto;
+}
+.input-text {
+  position: relative;
+  margin: 40px auto;
+  margin-bottom: 0;
+}
+
+input {
+  outline: none;
+}
+
+.input-text input {
+  padding: 10px 10px;
+  padding-right: 20px;
+  width: 100%;
+  border: transparent;
+  background-color: #1c1c1c;
+  border-bottom: 3px solid #45f3ff;
+  border-radius: 5px;
+  color: #333;
+  transition: all 0.5s;
+}
+
+.input-text label {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 80%;
+  color: #fff;
+  opacity: 0.7;
+  transition: all 0.5s;
+}
+
+.bi {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+}
+
+.link {
+  font-size: 80%;
+  margin-top: 20px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link a {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.link a:hover {
+  color: #45f3ff;
+  text-decoration: underline;
+}
+.btn input {
+  background-color: #45f3ff;
+  padding: 7px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-top: 15px;
+  box-shadow: -3px 3px 5px #fff;
+  border: none;
+}
+
+.btn input:hover {
+  opacity: 0.7;
+}
+.copyright {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  overflow: hidden;
+  animation: changeColor 6s infinite;
+}
+
+.copyright::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #1c1c1c;
+  top: 0;
+  left: 0;
+  border-left: 2px solid #fff;
+  animation: move linear 6s infinite;
+}
+@keyframes changeColor {
+  20% {
+    color: green;
+  }
+  40% {
+    color: red;
+  }
+  60% {
+    color: yellow;
+  }
+  80% {
+    color: #0984e3;
+  }
+}
+@keyframes move {
+  40%,
+  60% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+.wave {
+  opacity: 0.6;
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  width: 6000px;
+  height: 6000px;
+  background: #000;
+  margin-left: -3000px;
+  transform-origin: 50% 48%;
+  border-radius: 46%;
+  animation: wave 6s infinite linear;
+  pointer-events: none;
+}
+
+.wave2 {
+  opacity: 0.6;
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  width: 6000px;
+  height: 6000px;
+  background: #000;
+  margin-left: -3000px;
+  transform-origin: 48% 50%;
+  border-radius: 46%;
+  animation: wave 6s infinite linear;
+  pointer-events: none;
+}
+@keyframes wave {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  background-color: #0984e3;
+}
+
+.status {
+  color: red;
+  height: 20px;
+  text-align: center;
+  font-size: 80%;
+  margin-top: 20px;
+  /* visibility: hidden; */
+}

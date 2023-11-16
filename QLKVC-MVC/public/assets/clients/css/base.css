@@ -1,0 +1,134 @@
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --text-color: #333;
+  --main-color: #3f51b5;
+  --footer-color1: #2a4878;
+  --footer-color2: #12396e;
+}
+
+.color-home {
+  color: #ee9911;
+}
+
+.color-infor {
+  color: #0852a0;
+}
+
+.color-green {
+  color: #218d3b;
+}
+
+.color-news {
+  color: #e00000;
+}
+
+.color-dolla {
+  color: #58b3e9;
+}
+
+.color-note {
+  color: #11aaaa;
+}
+
+.color-bag {
+  color: #ff6c00;
+}
+
+.color-mail {
+  color: #1c89dd;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.twitter {
+  background-color: #00aced;
+}
+
+.ggplus {
+  background-color: #dd4b39;
+}
+.prin {
+  background-color: #cb2027;
+}
+.mail {
+  background-color: #aaaaaa;
+}
+.queen {
+  background-color: #0f52ba;
+}
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.grid {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.grid__full-width {
+  width: 100%;
+}
+
+.grid__row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+a {
+  color: #333;
+}
+
+.row {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+}
+
+.col-1 {
+  width: 10%;
+}
+
+.col-2 {
+  width: 20%;
+}
+.col-3 {
+  width: 30%;
+}
+.col-4 {
+  width: 40%;
+}
+.col-1 {
+  width: 10%;
+}
+.col-5 {
+  width: 50%;
+}
+.col-6 {
+  width: 60%;
+}
+.col-7 {
+  width: 70%;
+}
+.col-8 {
+  width: 80%;
+}
+.col-9 {
+  width: 90%;
+}
+
+.active-yellow {
+  color: #fff600 !important;
+}
